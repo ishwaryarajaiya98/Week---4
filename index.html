@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Sep 27 09:18:04 2023
+
+@author: Dell
+"""
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Hours vs. Scores Prediction</title>
+</head>
+<body>
+    <h1>Study Hours vs. Scores Prediction</h1>
+    
+    <form method="POST" action="/">
+        <label for="Hours">Enter Study Hours:</label>
+        <input type="text" id="Hours" name="Hours" required>
+        <input type="submit" value="Predict Score">
+    </form>
+
+    {% if prediction %}
+    <div>
+        <h2>Predicted Score:</h2>
+        <p>{{ prediction }}</p>
+    </div>
+    {% endif %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
